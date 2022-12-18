@@ -1,0 +1,6 @@
+<form action = "{%url 'leave_comment'%}" method="post" class="comment-input">
+    {% csrf_token %}
+      <input type="text" required  class="form-control" name="name" placeholder="Имя"><br>
+      <textarea name = "text" cols = "30" rows = "10"></textarea><br>
+        <button class="btn btn-default" type="submit">Оставить комментарий</button>
+<form>
