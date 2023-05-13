@@ -1,0 +1,63 @@
+
+
+body{
+    background-color: #111111;
+}
+
+.navbar {
+    background-color: #1F1F1F !important;
+}
+.navbar-brand{
+    color: white !important; 
+    font-size: 2rem;
+    margin-right: 11vh;
+}
+.navbar-toggler-icon{
+    font-size: 4vh;
+}
+
+main{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.popular{
+    padding-top: 3vh;
+    font-size: 20px;
+}
+
+.line1{
+    border: none; /* Убираем границу */
+    background-color: #D8D8D8; /* Цвет линии */
+    height: 1px; /* Толщина линии */
+    width: 30vh;
+    margin-top: .2rem;
+    margin-left: 14vh;
+    position: absolute
+}
+
+.p{
+    margin-top: 2vh;
+    font-family: 'Open Sans';
+    font-size: 1.3rem;
+    line-height: 27px;
+    
+}
+.line2{
+    border: none; /* Убираем границу */
+    background-color: #D8D8D8; /* Цвет линии */
+    height: 1px; /* Толщина линии */
+    width: 20vh;
+    margin-left: 18vh;
+    position: absolute
+
+}
+.btn{
+    margin-top: 2vh;
+    font-size: 3vh;
+    width: 20vh;
+    height: 10vh;
+    color: #D7601E;
+    border: none;
+    background-color: #1F1F1F;
+}

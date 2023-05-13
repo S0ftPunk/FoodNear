@@ -1,0 +1,70 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FOODNEAR</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="{%static 'comments/css/stylerate.css'%}">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <a class="navbar-brand " href="{%url 'main'%}">FOODNEAR</a>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                      <li class="nav-item">
+                        {% if user.is_authenticated %}
+                        <a class="nav-link text-white"  href="{%url 'logout'%}">Выйти</a>
+                        <a class="nav-link text-white" style = "color: #D7601E;" >{{user.username}}</a>
+                        {% else %}
+                        <a class="nav-link text-white" href="{%url 'auth'%}">Войти</a>
+                        {% endif %}
+                      </li>
+                    </ul>
+                
+                  </div>
+                </div>
+              </nav>
+    
+    
+    
+        </header>
+
+    <main>
+            <div>
+                <div class="row-cols-1">
+                    <div class = "col">
+                        <h1 style="font-size: 3.5vh; color: #D7601E; text-align: center; margin-top: 10vh;  ">ДОБРО ПОЖАЛОВАТЬ НА FOODNEAR</h1>
+                        <p style="font-size: 2.3vh; color: #dfd8d4; text-align: center; letter-spacing: 0.15em;">- ваш надежный помощник в поиске лучших мест для быстрого перекуса!</p>
+                        <p style="font-size: 2.3vh; color: #dfd8d4; text-align: left; letter-spacing: 0.15em; margin-top: 5vh; margin-left: 15vh;"> Мы создали этот сайт, чтобы предоставить студентам удобный и простой способ поиска мест, где можно быстро и вкусно перекусить. FoodNear предоставляет пользователям обширный список фудкортов, чтобы каждый нашел себе место по вкусу.</p>
+                        <p style="font-size: 2.3vh; color: #dfd8d4; text-align: left; letter-spacing: 0.15em; margin-left: 15vh;"><b style="color: #D7601E;">Поделитесь своим опытом</b> – авторизуйтесь и расскажите другим студентам ваши впечатления после трапезы в каком-либо заведении из списка! Мы стремимся создать сообщество, где люди могут делиться своим опытом и советами, чтобы помочь друг другу наслаждаться вкусной едой.</p>
+                        <p style="font-size: 2.3vh; color: #dfd8d4; text-align: left ;; letter-spacing: 0.15em; margin-left: 15vh;"> Наш сайт будет полезен для всех, кто ищет быстрое, вкусное и доступное питание.</p>
+                        <p style="font-size: 2.3vh; color: #dfd8d4; text-align: left; letter-spacing: 0.15em; margin-left: 15vh;"> Благодарим вас за то, что выбрали <b style="color: #D7601E;"> FoodNear</b>, и надеемся, что наш сайт поможет вам наслаждаться вкусной едой в любое время дня и ночи! </p>
+                    
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+
+</body>
+  
+  </html>
